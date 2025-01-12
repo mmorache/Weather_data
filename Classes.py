@@ -97,12 +97,3 @@ class weather_stats:
         precip_values = [float(value[0]) for value in precip_dict.values()]
         total_precip = sum(precip_values)
         return total_precip
-
-
-weather_data = weather_stats()
-print(weather_data.temp_data(2023, 2022, 2021, 2020, 2019))
-print(weather_data.wind_data(2023, 2022, 2021, 2020, 2019))
-print(weather_data.precip_data(2023, 2022, 2021, 2020, 2019))
-print(weather_data.mean_temp())
-print(weather_data.max_wind())
-print(weather_data.precip_sum())
